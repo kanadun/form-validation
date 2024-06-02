@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#2eccc4,#000cb3);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 10px 20px 25px rgba(0, 0, 0, .3);
+    overflow: hidden;
+    max-width: 100%;
+    width: 400px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.header {
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+}
+
+.header h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control input:focus {
+    outline: none;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #ff0000;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #ff0000;
+    visibility: visible;
+}
+
+.form-control small {
+    color: #ff0000;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    background: linear-gradient(#2eccc4,#000cb3);
+    border: none;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width:320px) {
+    .container {
+        background: linear-gradient(#2eccc4,#000cb3);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .form button {
+        background: linear-gradient(#07f586,#073a1e);
+    }
+
+    .form-control {
+        color: #fff;
+    }
+
+    .form-control input:focus {
+        border-color: #00e1ff;
+    }
+    .container .header {
+        background: linear-gradient(#ff3557,#1616c2);
+    }
+}
+
+@media screen and (max-width:425px) {
+    .container {
+        background: linear-gradient(#2eccc4,#000cb3);
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 425px;
+    }
+
+    .form button {
+        background: linear-gradient(#07f586,#073a1e);
+    }
+
+    .form-control {
+        color: #fff;
+    }
+
+    .form-control input:focus {
+        border-color: #00e1ff;
+    }
+    .container .header {
+        background: linear-gradient(#ff3557,#1616c2);
+    }
+}
